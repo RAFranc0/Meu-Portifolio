@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfólio - Raul A Franco</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <nav id="menu">
+            <a href="#sobre" id="pg-sobre">sobre</a>
+            <a href="#projetos" id="pg-projetos">projetos</a>
+            <a href="#contatos" id="pg-contatos">contatos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="sobre" id="sobre">
+            <div class="section-inside-container section-reveal left-reveal">
+                <div id="sobre-imagem">
+                    <img src="/images/foto.jpg" alt="Foto não encontrada" id="foto-perfil">
+                </div>
+
+                <div id="sobre-texto">
+                    <h1>Raul Ayrton Franco</h1>
+                    <p>Tenho 31 anos, sou pai da <span class="destaque-texto">Maria Flor</span> e estou construindo
+                        minha trajetória na área de <span class="destaque-texto">tecnologia</span>. Atualmente, curso o
+                        <span class="destaque-texto">1º semestre</span> de <span class="destaque-texto">Análise e
+                            Desenvolvimento de Sistemas</span> pela <span class="destaque-texto">Gran Faculdade</span> e
+                        estou no último módulo do curso técnico em <span class="destaque-texto">Informática para
+                            Internet</span> — com foco em <span class="destaque-texto">desenvolvimento fullstack</span>
+                        — pelo <span class="destaque-texto">SENAC</span>.
+                    </p>
+
+                    <p>Minha <span class="destaque-texto">paixão por tecnologia</span> começou cedo, ainda na infância,
+                        quando passei a consertar computadores por conta própria. Em 2022, decidi transformar essa
+                        afinidade em carreira e mergulhei de vez no universo da programação.</p>
+
+                    <p>Sou <span class="destaque-texto">curioso</span>, <span class="destaque-texto">dedicado</span>,
+                        <span class="destaque-texto">proativo</span> e <span class="destaque-texto">comunicativo</span>.
+                        Gosto de <span class="destaque-texto">resolver problemas</span>, <span
+                            class="destaque-texto">aprender coisas novas</span>, <span
+                            class="destaque-texto">compartilhar conhecimento</span> e <span
+                            class="destaque-texto">trabalhar em equipe</span>.
+                    </p>
+
+                    <p>Atualmente, busco minha <span class="destaque-texto">primeira oportunidade</span> na área como
+                        <span class="destaque-texto">estagiário</span> ou <span class="destaque-texto">desenvolvedor
+                            júnior</span>. Aqui no site, você pode conhecer alguns dos <span
+                            class="destaque-texto">projetos</span> que desenvolvi e encontrar meus <span
+                            class="destaque-texto">principais contatos</span>.
+                    </p>
+
+
+                    <h4>🛠️ Minhas Habilidades</h4>
+
+                    <ul class="habilidades-lista-horizontal">
+                        <li><span class="destaque-texto">Linguagens:</span> C#, JavaScript</li>
+                        <li><span class="destaque-texto">Mobile:</span> React Native</li>
+                        <li><span class="destaque-texto">Front-end:</span> HTML, CSS, Bootstrap</li>
+                        <li><span class="destaque-texto">Banco de Dados:</span> MySQL, SQLite, PostgreSQL</li>
+                        <li><span class="destaque-texto">Versionamento:</span> Git</li>
+                    </ul>
+
+                    <button id="sobre-btn">Meu currículo</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h3 class="section-title"> meus projetos </h3>
+            <div class="section-inside-container section-reveal">
+                <div class="carousel-container" id="carousel">
+                    <div class="carousel-slides" id="slides">
+                        <div class="carousel-slide">
+                            <div class="slide-esquerda">
+                                <h3 class="titulo-projeto">Sistema de Atendimento Técnico</h3>
+                                <p class="descricao-projeto">O <em>Sistema de Atendimento Técnico</em>, ou <em>SAT</em>, é uma plataforma
+                                    web direcionada para a gestão de solicitações - tickets, chamados, OS, entre outros
+                                    nomes - de suporte técnico. O objetivo é facilitar o contato, organizar e
+                                    centralizar este tipo de solicitação.</p>
+                                <p class="descricao-projeto">A motivação para esse projeto foi uma situação real em uma empresa na qual atuei como <em>Assistente de TI</em> onde a
+                                    alta demanda e a necessidade de me deslocar até os diferentes setores para receber
+                                    o pedido de suporte deixava a tratativa mais lenta.</p>
+                                <div class="tecnologias">
+                                    <p>.NET C#</p>
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+
+                                <div class="container-slide-btn">
+                                    <button class="projeto-btn" id="slide-btn">Confira</button>
+                                </div>
+                            </div>
+                            <div class="slide-direita">
+                                <img class="imagem-projeto" src="/images/satweb.PNG" alt="Imagem não encontrada">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow arrow-left" id="prev">&#10094;</button>
+                    <button class="arrow arrow-right" id="next">&#10095;</button>
+                </div>
+                <!--
+                <div class="card">
+                    <div class="card-corpo">
+                        <h1>SATWeb</h1>
+                        <h4>Sistema de Atendimento Técnico</h4>
+                        <hr class="separador">
+                        <p class="card-texto">Uma plataforma web desenvolvida com a proposta de gerenciar e
+                            acompanhar chamados/solicitações relacionadas a suporte técnico, podendo ser utilizado para
+                            diferentes especialidades (TI, manutenção predial, etc).</p>                        
+                    
+                        <div class="card-tecnologias">
+                            <h4>Técnologias utilizadas:</h4>
+                            
+                            <span class="tecnologia">C#</span>
+                            <span class="tecnologia">HTML</span>
+                            <span class="tecnologia">CSS</span>
+                            <span class="tecnologia">JavaScript</span>
+                        </div>
+
+                        <button id="card-btn">CONFIRA</button>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+        
+        <section class="contatos" id="contatos">
+            <h3 class="section-title"> meus contatos e redes </h3>
+            <div class="section-inside-container contatos-container section-reveal right-reveal">
+                <a class="contato-link" 
+                   href="https://github.com/RAFranc0" 
+                   id="link-github" 
+                   target="_blank">
+                        <span>GitHub</span>
+                        <img src="/images/icon-github.png" alt="">
+                </a>
+
+                <a class="contato-link" 
+                   href="https://www.linkedin.com/in/raul-ayrton-franco-589b0a1b3/"
+                   id="link-linkedin"
+                   target="_blank">
+                        <span>LinkedIn</span>
+                        <img src="/images/icon-linkedin.png" alt="">
+                </a>
+
+                <a class="contato-link"
+                   href="https://www.instagram.com/raulayrton" 
+                   id="link-instagram"
+                   target="_blank">
+                        <span>Instagram</span>
+                        <img src="/images/icon-instagram.png" alt="">
+                </a>
+
+                <a class="contato-link" 
+                   href="https://wa.me/5516996482128" 
+                   id="link-whatsapp"
+                   target="_blank">
+                        <span>Whatsapp</span>
+                        <img src="/images/icon-wpp.png" alt="">
+                </a>
+
+                <a class="contato-link" 
+                   href="mailto:raul.franco266@gmail.com" 
+                   id="link-gmail">
+                        <span>E-mail</span>
+                        <img src="/images/icon-gmail.png" alt="">
+                        <div class="tooltip-email">Copiado!</div>
+                        <img src="images/icon-copiar.png" alt="" id="icone-copiar">
+                </a>
+
+
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollrevel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
